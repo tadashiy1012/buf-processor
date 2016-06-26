@@ -1,0 +1,30 @@
+{
+  "name": "buf-processor",
+  "version": "1.0.0",
+  "description": "It provides operations to the binary",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tadashiy1012/buf-processor.git"
+  },
+  "keywords": [
+    "buffer"
+  ],
+  "author": "Tadashi Yamazaki <tadashi.y1012@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tadashiy1012/buf-processor/issues"
+  },
+  "homepage": "https://github.com/tadashiy1012/buf-processor#readme",
+  "dependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1"
+  },
+  "directories": {
+    "test": "test/"
+  }
+}
