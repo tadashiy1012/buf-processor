@@ -17,10 +17,15 @@ module.exports = (function() {
     const num = parseInt(hex, 16);
     return num;
   }
+  function indexOf(subject) {
+    const str = readAsHexString(0, self.buffer.length);
+    return str.indexOf(subject);
+  }
   return function bufProcessor(buffer) {
     self = this;
     this.buffer = buffer;
     this.readAsHexString = readAsHexString;
     this.readAsInt = readAsInt;
+    this.indexOf = indexOf;
   };
 })();

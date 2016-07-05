@@ -11,6 +11,7 @@ var Processor = require('buf-processor');
 var buf = new Uint8Array([1, 2, 3, 0xff]);
 var proc = new Processor(buf);
 var str = proc.readAsHexString(0, 1); // '01'
+var idx = proc.indexOf('01'); // 0
 ```
 
 ## License
