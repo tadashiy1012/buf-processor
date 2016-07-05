@@ -1,6 +1,6 @@
 {
   "name": "buf-processor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It provides operations to the binary",
   "main": "index.js",
   "scripts": {
