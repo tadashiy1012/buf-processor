@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/tadashiy1012/buf-processor.svg?branch=master)](https://travis-ci.org/tadashiy1012/buf-processor)
 # buf-processor
 It provides operations to the binary
 
