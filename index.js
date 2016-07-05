@@ -18,8 +18,24 @@ module.exports = (function() {
     return num;
   }
   function indexOf(subject) {
-    const str = readAsHexString(0, self.buffer.length);
-    return str.indexOf(subject);
+    let ss = [];
+    for (let j = 0; j < subject.length; j += 2) {
+      ss.push(subject.substring(j, j + 2));
+    }
+    let check = [];
+    for (let i = 0, idx = 0, s = ss[idx]; i < self.buffer.length; i++) {
+      let str = readAsHexString(i, 1);
+      if (s === str) {
+        check.push(i);
+        idx += 1;
+        s = ss[idx];
+      } else {
+        if (check.length > 0) {
+          break;
+        }
+      }
+    }
+    return check.length === ss.length ? check[0] : -1;
   }
   return function bufProcessor(buffer) {
     self = this;

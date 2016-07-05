@@ -14,7 +14,9 @@ describe('buf-processor test', () => {
     assert(num1 === 1);
     const num2 = proc.readAsInt(0, 2);
     assert(num2 === 258);
-    const idx = proc.indexOf('01');
+    const idx = proc.indexOf('0102');
     assert(idx === 0);
+    const idx2 = proc.indexOf('ff');
+    assert(idx2 === 3);
   });
 });
